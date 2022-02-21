@@ -22,7 +22,7 @@ export default function Home() {
     <Layout>
       <div className={styles.cardContainer}>
         {
-          data&&data.map(product=><Link key={product.id} to={`/produto/${product.nome}`} style={{ textDecoration: 'none',color:'#000' }}>
+          data&&data.map(product=><Link key={product.id} to={`/produto/${product.id}`} style={{ textDecoration: 'none',color:'#000' }}>
                                     <Card pathImg={product.fotos[0].src} nome={product.nome}/>
                                   </Link>)
         }
