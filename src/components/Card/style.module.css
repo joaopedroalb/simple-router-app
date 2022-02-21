@@ -4,15 +4,15 @@
     cursor: pointer;
 }
 
-.container img{
+.imageCard{
     width: 250px;
     border-radius: 12px;
 
     transition: 400ms;
 }
 
-.container img:hover{
-    transform: scale(1.10);
+.container:hover > .imageCard{
+    transform: scale(1.05);
 }
 
 .title{
