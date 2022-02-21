@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
+import Loading from '../components/Loading';
 import styles from '../styles/Product.module.css'
 
 export default function Product() {
@@ -24,7 +25,7 @@ export default function Product() {
   return (
     <Layout>
       {
-        product&&(
+        product?(
           <div className={styles.container}>
             <img alt={product.nome} src={product.fotos[0].src}/>
             <div className={styles.infoContainer}>
@@ -35,7 +36,7 @@ export default function Product() {
               </div>
             </div>
           </div>
-        )
+        ):<Loading/>
       }
     </Layout>
   )
