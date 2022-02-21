@@ -18,9 +18,11 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-        {
-          data&&data.map(product=><Card key={product.id} pathImg={product.fotos[0].src} nome={product.nome}/>)
-        }
+        <div className={styles.cardContainer}>
+          {
+            data&&data.map(product=><Card key={product.id} pathImg={product.fotos[0].src} nome={product.nome}/>)
+          }
+        </div>
     </div>
   )
 }

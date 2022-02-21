@@ -1,5 +1,18 @@
+.container{
+    flex: 1;
+
+    cursor: pointer;
+}
+
 .container img{
     width: 250px;
+    border-radius: 12px;
+
+    transition: 400ms;
+}
+
+.container img:hover{
+    transform: scale(1.10);
 }
 
 .title{
