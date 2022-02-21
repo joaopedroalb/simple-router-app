@@ -1,0 +1,7 @@
+.container img{
+    width: 250px;
+}
+
+.title{
+    text-transform: capitalize;
+}
