@@ -1,10 +1,10 @@
 import React from 'react'
-import Nav from '../components/Nav'
+import Layout from '../components/Layout'
 
 export default function Product() {
   return (
-    <div>
-      <Nav/>
-    </div>
+    <Layout>
+
+    </Layout>
   )
 }
