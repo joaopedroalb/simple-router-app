@@ -19,13 +19,13 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.cardContainer}>
+      <section className={styles.cardContainer}>
         {
           data&&data.map(product=><Link key={product.id} to={`/produto/${product.id}`} style={{ textDecoration: 'none',color:'#000' }}>
                                     <Card pathImg={product.fotos[0].src} nome={product.nome}/>
                                   </Link>)
         }
-      </div>
+      </section>
     </>
   )
 }

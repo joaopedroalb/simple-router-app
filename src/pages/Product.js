@@ -25,7 +25,7 @@ export default function Product() {
     <>
       {
         product?(
-          <div className={styles.container}>
+          <div className={`${styles.container} animeLeft`}>
             <img alt={product.nome} src={product.fotos[0].src}/>
             <div className={styles.infoContainer}>
               <h1>{product.nome}</h1>
