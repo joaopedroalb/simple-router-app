@@ -31,3 +31,13 @@
     margin-right: 10px;
    }
 
+
+@media only screen and (max-width: 1296px) {
+    .contactContainer {
+        justify-content: center;
+    }
+
+    .contactContainer img{
+        width: 250px
+    }
+}

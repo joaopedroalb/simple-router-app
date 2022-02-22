@@ -1,21 +1,18 @@
-.container{
+.containerBg{
     width: 100%;
-    min-height:100vh;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 1rem;
     padding-top: 2.5rem;
-
-}
-
-.navContainer{
-    align-self: flex-start;
-}
-
-.navContainer, .childrenContainer, .footerContainer{
-    padding: 0 20%;
+    min-height: 100vh;
 }
 
 .childrenContainer{
@@ -28,3 +25,13 @@
     align-self: center;
     padding: .6rem;
 }
+
+@media only screen and (max-width: 1296px) {
+    .container {
+        align-items: center;
+        width: 100%;
+        padding: 0 3rem;
+        padding-top: 2.5rem;
+    }
+}
+

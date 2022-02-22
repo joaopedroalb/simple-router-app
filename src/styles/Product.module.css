@@ -22,3 +22,17 @@
 .descriptionContainer{
     font-weight: 600;
 }
+
+@media only screen and (max-width: 1296px) {
+    .container{
+        justify-content: center;
+        text-align: center;
+    }
+    .infoContainer{
+        width: 100%;
+    }
+
+    .container img{
+        width: 250px;
+    }
+}
