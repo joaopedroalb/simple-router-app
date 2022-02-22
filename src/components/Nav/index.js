@@ -1,20 +1,21 @@
 import styles from './style.module.css'
 
 import React from 'react'
-import { useLocation, Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 export default function Nav() {
-  const path = useLocation().pathname
 
   return (
     <nav className={styles.container}>
-      <Link to='/'>
-        <button className={path==='/'?styles.active:''}>Produtos</button>
-      </Link>
+      <ul>
+        <li>
+          <NavLink className={styles.btnLink} to='/'>Produtos</NavLink>
+        </li>
 
-      <Link to='/contato'>
-        <button className={path==='/contato'?styles.active:''}>Contato</button>
-      </Link>
+        <li>
+          <NavLink className={styles.btnLink} to='/contato'>Contato</NavLink>
+        </li>
+      </ul>
     </nav>
   )
 }
