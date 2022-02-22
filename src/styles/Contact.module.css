@@ -1,11 +1,11 @@
 .contactContainer{
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap; 
     justify-content: flex-start;
     align-items: flex-start;
-    */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     gap: 3rem;
     
 }
