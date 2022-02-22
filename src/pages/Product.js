@@ -23,7 +23,7 @@ export default function Product() {
   },[name])
 
   return (
-    <Layout>
+    <>
       {
         product?(
           <div className={styles.container}>
@@ -38,6 +38,6 @@ export default function Product() {
           </div>
         ):<Loading/>
       }
-    </Layout>
+    </>
   )
 }

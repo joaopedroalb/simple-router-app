@@ -6,7 +6,7 @@ export default function Contact() {
     const IMAGE_KEYBOARD = "https://cdn.discordapp.com/attachments/469630958811742212/945325244661497906/M25C325A1quina2Bde2Bescrever2Bna2Bdecora25C325A725C325A3o_De2Bvolta2Bao2Bretr25C325B4_11.png"
 
   return (
-    <Layout>
+    <>
         <div className={styles.contactContainer}>
             <img src={IMAGE_KEYBOARD} alt='Keyboard'/>
             <article>
@@ -20,6 +20,6 @@ export default function Contact() {
                 </ul>
             </article>
         </div>
-    </Layout>
+    </>
   )
 }

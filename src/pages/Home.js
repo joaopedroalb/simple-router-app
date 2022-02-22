@@ -19,7 +19,7 @@ export default function Home() {
   },[])
 
   return (
-    <Layout>
+    <>
       <div className={styles.cardContainer}>
         {
           data&&data.map(product=><Link key={product.id} to={`/produto/${product.id}`} style={{ textDecoration: 'none',color:'#000' }}>
@@ -27,6 +27,6 @@ export default function Home() {
                                   </Link>)
         }
       </div>
-    </Layout>
+    </>
   )
 }
