@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
-import Layout from '../components/Layout'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
