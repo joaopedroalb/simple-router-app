@@ -19,7 +19,7 @@
     text-transform: capitalize;
 }
 
-@media only screen and (max-width: 1296px) {
+@media only screen and (max-width: 1323px) {
     .container{
         display: flex;
         flex-direction: column;
